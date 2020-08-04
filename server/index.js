@@ -11,7 +11,7 @@ const fileRoutes = require("./routes/image");
 require("dotenv").config(); //will add all the variables inside .env as global variable
 
 const { NODE_PORT, NODE_ENV, CLIENT_URL, DATABASE_URL } = process.env; //process.env by this we use each .env variable
-const PORT = NODE_PORT || 8000;
+const PORT = 8000;
 const isDevelopment = NODE_ENV === "development";
 
 const app = express();
